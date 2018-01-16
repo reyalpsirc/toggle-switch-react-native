@@ -101,7 +101,7 @@ class ToggleSwitch extends React.Component{
                   <View style={{width: this.props.width, height: this.props.height}}>
                     <View style={[styles.defaultParent, {position: 'absolute', top: 0, left: 0, width: this.props.width, height: this.props.height}]}>
                       <View style={[styles.defaultTrack, this.props.trackStyle, {
-                        width: this.props.width, height: this.props.height,
+                        width: this.props.width, flex: 1,
                         borderColor: (this.state.isOn) ? this.props.borderTrackOnColor : this.props.borderTrackOffColor,
                         backgroundColor: (this.state.isOn) ? this.props.onColor : this.props.offColor
                       }]}/>
